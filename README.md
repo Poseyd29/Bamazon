@@ -30,11 +30,11 @@ Below are some screenshots to help.
 
 In your Terminal run the command "node bamazonCustomer.js" to run the program
 
-*insert screenshot*
+<img src="run-node.png" height="100" width="75">
 
-Then you will be prompted to choose a product by ID number. Choose any product you would like and you will be asked how many.
+Then you will be prompted to choose a product by ID number. Choose any product you would like and you will be asked how many. If the product has enough stock your order will be processed.
 
-*insert screenshot*
+<img src="stock.png" height="100" width="75">
 
 
 
