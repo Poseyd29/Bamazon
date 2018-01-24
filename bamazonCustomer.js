@@ -76,9 +76,26 @@ function getQuantity (idchoice, productsArr){
 		console.log(qchoice);
 	});
 
-	
+
 }
 
+// my attempt to update product
+function updateProduct() {
+  console.log("Updating stock quantity...\n");
+  connection.query(
+    "UPDATE Bamazon_db SET ? WHERE ?",
+    [
+      {
+        StockQuantity: StockQuantity - qchoice
+      },
+    ],
+    function(err, res) {
+      console.log(StockQuantity + " products updated!\n");
+    }
+  );
 
+  // logs the actual query being run
+  console.log(query.sql);
+}
 
 
